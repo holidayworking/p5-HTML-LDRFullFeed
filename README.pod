@@ -1,20 +1,26 @@
 =head1 NAME
 
-HTML::LDRFullFeed -
+HTML::LDRFullFeed - An HTML content extractor by LDRFullFeed.
 
 =head1 SYNOPSIS
 
   use HTML::LDRFullFeed;
 
+  my $ldr = HTML::LDRFullFeed->new( api_key => 'YOUR_API_KEY');
+  $ldr->extract('http://www.example.com/');
+  say $ldr->{result}{content};
+
 =head1 DESCRIPTION
 
-HTML::LDRFullFeed is
+HTML::LDRFullFeed is An HTML content extractor by LDRFullFeed.
 
 =head1 AUTHOR
 
 Hidekazu Tanaka E<lt>hidekazu.tanaka@gmail.comE<gt>
 
 =head1 SEE ALSO
+
+L<http://wedata.net/databases/LDRFullFeed/items>
 
 =head1 LICENSE
 

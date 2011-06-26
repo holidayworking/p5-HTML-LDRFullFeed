@@ -4,7 +4,10 @@ all_from 'lib/HTML/LDRFullFeed.pm';
 readme_pod_from 'lib/HTML/LDRFullFeed.pm';
 githubmeta;
 
-# requires '';
+requires 'Class::Accessor::Fast';
+requires 'Test::Perl::Critic';
+requires 'WebService::Wedata';
+requires 'Web::Scraper';
 
 tests 't/*.t';
 author_tests 'xt';
